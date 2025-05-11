@@ -107,7 +107,7 @@ namespace Kadmium_sACN.SacnReceiver
 
 				buffer = buffer.Slice(0, packet.Length);
 
-				reader.AdvanceTo(buffer.Start, buffer.End);
+				reader.AdvanceTo(buffer.End);
 
 				if (result.IsCompleted)
 				{
